@@ -1,3 +1,5 @@
+
+
 body {
     display: flex;
     height: 100vh;
@@ -9,6 +11,8 @@ body {
     background-size: cover;
     background-position: center;
     flex: 0.5;
+    display: flex;
+    flex-direction: column;
 }
 
 .odin, .caption {
@@ -16,14 +20,107 @@ body {
     color: white;
 }
 
-.odin {
-    font-size: 48px;
-    background-color: rgba(0, 0, 0, 0.5);
+.odin-image {
+    height: 9vw;
     
 }
 
+.odin {
+    font-size: 2.5vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 19vh;
+    margin-top: 20vh;
+    
+}
+
+.caption {
+    flex:1;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
 .right {
     display: flex;
     flex-direction: column;
     flex: 1;
+}
+
+.title {
+    font-size: 24px;
+    padding: 60px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(245, 245 ,245 );
+    flex: 1;
+    align-content: center;
+    padding-right: 100px;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid rgb(230, 230 ,230 );
+    font-size: 24px;
+}
+
+input:focus {
+    box-shadow: 0 8px 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+.pass:invalid {
+    border-color: red;
+}
+
+.pass:valid {
+    border-color: green;
+}
+
+label {
+    font-size: 15px;
+    color: rgb(30, 30 ,30 );
+    letter-spacing: 0.2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    text-transform: uppercase;
+}
+
+.form {
+    padding: 20px;
+    box-shadow: 0 3px 5px 0.5px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    padding-right: 250px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-section {
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+}
+
+.creation {
+    padding: 40px;
+    background-color: rgb(245, 245 ,245 );
+    flex: 1;
+    padding-right: 100px;
+}
+
+.creation > button {
+    border: 0;
+    color: white;
+    border-radius: 10px;
+    background-color: #596D48;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    box-shadow: 0 3px 5px 0.5px rgba(0, 0, 0, 0.15);
 }
