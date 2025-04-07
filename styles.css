@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.image {
+    background-image: url(images/unplash.png);
+    background-size: cover;
+    background-position: center;
+    flex: 0.5;
+}
+
+.odin, .caption {
+    text-align: center;
+    color: white;
+}
+
+.odin {
+    font-size: 48px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
